@@ -183,7 +183,7 @@ section .title::after {
 /* ===== Section background & layout ===== */
 .home {
   /* display: flex; */
-  background: url("img/bgbg.png") no-repeat center;
+  background: url("img/bgbg.webp") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -201,7 +201,7 @@ section .title::after {
 /* ===== Mobile image visible only on small screens ===== */
 @media (max-width: 768px) {
   .home {
-    background: url("img/mmbg.png") no-repeat center;
+    background: url("img/mmbg.webp") no-repeat center;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -846,6 +846,12 @@ section .title::after {
 .teams .title::after {
     content: "Projects Done";
 }
+.containerrr .title::after {
+    content: "Skilled. Passionate. Ready to Deliver.";
+}
+.containerrrr .title::after {
+    content: "Numbers that speak for us..";
+}
 
 .teams .carousel .card {
     background: #222;
@@ -933,6 +939,13 @@ textarea {
 
 .contact .title::after {
     content: "get in touch";
+}
+.contactt .title::after {
+    content: "Numbers that speak for us.";
+}
+.containerrr .title::after {
+    content: "Skilled. Passionate. Ready to Deliver.";
+    background-color: transparent !important;
 }
 
 .contact .contact-content .column {
@@ -1554,5 +1567,228 @@ footer .wave#wave4 {
   .footer-left {
     text-align: left;
     margin-bottom: 0;
+  }
+}
+
+
+ /* <!-- ===================my teame section start =================== --> */
+
+
+.ram-team-box {
+	border-radius: 150px;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.ram-team-box:before {
+	position: absolute;
+	content: '';
+	left: 0px;
+	top: 0px;
+	width: 0px;
+	height: 100%;
+	border-radius: 150px;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.30);
+	transition: all 0.3s ease;
+	background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
+}
+.ram-team-box:hover:before {
+	width: 100%;
+}
+.ram-team-box:hover .ram-team-image-wrapper {
+	padding: 0;
+}
+.ram-team-box:hover .ram-team-box-desc {
+	color: #fff;
+}
+.ram-team-box:hover .ram-team-social li a {
+	background: #fff;
+	background-image: none;
+	color: #000;
+}
+.ram-team-box:hover .ram-team-social li a:hover {
+	background: #1d1d1d;
+	color: #fff;
+}
+.ram-team-image-wrapper {
+	position: relative;
+	max-width: 210px;
+	max-height: 210px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 50%;
+	padding: 15px;
+	transition: all 0.5s ease;
+	box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.20);
+}
+.ram-team-image-wrapper img {
+	border-radius: 50%;
+	transition: all 500ms ease;
+}
+.ram-team-box-desc {
+	position: relative;
+}
+ul.ram-team-social {
+	padding: 0;
+}
+ul.ram-team-social li {
+	display: inline-block;
+	list-style-type: none;
+}
+ul.ram-team-social li a {
+	position: relative;
+	width: 36px;
+	height: 36px;
+	background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
+	display: inline-block;
+	line-height: 36px;
+	border-radius: 50%;
+	color: #fff;
+	transition: all .5s ease;
+}
+.containerrr{
+    align-items: center;
+    padding: 40px 0;
+    background: #111;
+
+}
+.containerrrr{
+    align-items: center;
+    padding: 40px 0;
+    background-color: white !important;
+    /* background: #111; */
+
+}
+.containerr {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .containerr {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .containerr {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .containerr {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .containerr {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .containerr {
+    max-width: 1320px;
+  }
+}
+
+
+   
+  /* <!-- ===================my teame section end =================== --> */
+
+
+
+a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5em;
+}
+.bestcount-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bestcount-container {
+  width: 20vw;
+  height: 12vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color: #2a2a2d;
+  border-bottom: 5px solid #E9331F;
+}
+/* i {
+  color: #E9331F;
+  font-size: 2.5em;
+  text-align: center;
+} */
+ .icon2{
+    color: #dc1433;
+     text-align: center;
+     font-size: 2.5em;
+
+ }
+.bestcount-num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+.bestcount-text {
+  color: #e0e0e0;
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0.7em 0;
+  font-weight: 600;
+  line-height: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .bestcount-wrapper {
+    width: 85vw;
+  }
+  .bestcount-container {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bestcount-wrapper {
+    width: 900vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .bestcount-container {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bestcount-wrapper {
+    gap: 15px;
+  }
+  .bestcount-container {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
   }
 }
