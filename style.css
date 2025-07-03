@@ -1783,3 +1783,65 @@ h1, h2, h3, h4 {
   box-sizing: border-box;
 }
 
+@media (max-width: 767px) {
+  .services2 {
+    margin-top: 25px;
+  }
+  .mobcenter{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 767px) {
+  .titleour + * {
+    margin-top: 20px;
+  }
+}
+
+}
+.fancy-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* space between name and lines */
+}
+
+.fancy-text .line {
+  flex: 1;
+  height: 2px;
+  background-color: rgb(5, 5, 5);
+  max-width: 50px; /* control the length */
+}
+
+.fancy-text .name {
+  color: crimson;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.fancy-text .name2 {
+  color: crimson;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.fancy-text2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: crimson;
+}
+
+.fancy-text2 .line2 {
+  flex: 1;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  max-width: 50px;
+}
+
+.fancy-text2 .name2 {
+    color: crimson;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
