@@ -2039,6 +2039,39 @@ h4 {
     height: 100%;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+  .vikash-card {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    border-width: 15px;
+    padding-bottom: 20px;
+  }
+
+  .vikash-card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 3px solid #a0cdcf;
+  }
+
+  .vikash-card-description {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .vikash-card-description-social {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .vikash-card-description-social ul {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 
 
 
