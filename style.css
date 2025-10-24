@@ -1434,7 +1434,7 @@ footer .wave#wave4 {
 }
 
 /* <!-- ===========botom chat  start ======== -->  */
-.floating-icons {
+/* .floating-icons {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -1448,7 +1448,7 @@ footer .wave#wave4 {
     width: 50px;
     height: 50px;
     background-color: #25D366;
-    /* WhatsApp Green */
+    
     color: white;
     border-radius: 50%;
     display: flex;
@@ -1462,7 +1462,7 @@ footer .wave#wave4 {
 
 .floating-icons a.call {
     background-color: #128C7E;
-    /* Darker green for call */
+ 
 }
 
 .floating-icons a:hover {
@@ -1507,7 +1507,7 @@ footer .wave#wave4 {
     width: 50px;
     height: 50px;
     background-color: #25D366;
-    /* WhatsApp Green */
+   
     color: white;
     border-radius: 50%;
     display: flex;
@@ -1522,12 +1522,63 @@ footer .wave#wave4 {
 
 .floating-icons a.call {
     background-color: #128C7E;
-    /* Darker green for call */
+   
 }
 
 .floating-icons a.call i {
     transform: scaleX(-1);
-    /* Flip icon */
+   
+} */
+
+/*Estilos generales del boton whatsapp*/
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: breathe 2s ease-in-out infinite;
+}
+
+/*Estilos solo al icono whatsapp*/
+.whatsapp-btn i {
+  color: #fff;
+  font-size: 24px;
+  animation: beat 2s ease-in-out infinite;
+  text-decoration: none;
+}
+
+/*Estilos con animation contorno respirando*/
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/*Estilos de animacion del icono latiendo*/
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 
@@ -1582,153 +1633,6 @@ footer .wave#wave4 {
 }
 
 
-/* <!-- ===================my teame section start =================== --> */
-
-
-.ram-team-box {
-    width: 90%;
-    border-radius: 150px;
-    background: #fff;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-
-.ram-team-box:before {
-    position: absolute;
-    content: '';
-    left: 0px;
-    top: 0px;
-    width: 0px;
-    height: 100%;
-    border-radius: 150px;
-    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.30);
-    transition: all 0.3s ease;
-    background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
-}
-
-.ram-team-box:hover:before {
-    width: 100%;
-}
-
-.ram-team-box:hover .ram-team-image-wrapper {
-    padding: 0;
-}
-
-.ram-team-box:hover .ram-team-box-desc {
-    color: #fff;
-}
-
-.ram-team-box:hover .ram-team-social li a {
-    background: #fff;
-    background-image: none;
-    color: #000;
-}
-
-.ram-team-box:hover .ram-team-social li a:hover {
-    background: #1d1d1d;
-    color: #fff;
-}
-
-.ram-team-image-wrapper {
-    position: relative;
-    max-width: 210px;
-    max-height: 210px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 50%;
-    padding: 15px;
-    transition: all 0.5s ease;
-    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.20);
-}
-
-.ram-team-image-wrapper img {
-    border-radius: 50%;
-    transition: all 500ms ease;
-}
-
-.ram-team-box-desc {
-    position: relative;
-}
-
-ul.ram-team-social {
-    padding: 0;
-}
-
-ul.ram-team-social li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-ul.ram-team-social li a {
-    position: relative;
-    width: 36px;
-    height: 36px;
-    background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
-    display: inline-block;
-    line-height: 36px;
-    border-radius: 50%;
-    color: #fff;
-    transition: all .5s ease;
-}
-
-.containerrr {
-    align-items: center;
-    padding: 40px 0;
-    background: #111;
-
-}
-
-.containerrrr {
-    align-items: center;
-    padding: 40px 0;
-    background-color: white !important;
-    /* background: #111; */
-
-}
-
-.containerr {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 576px) {
-    .containerr {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .containerr {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .containerr {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .containerr {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width: 1400px) {
-    .containerr {
-        max-width: 1320px;
-    }
-}
-
-
-
-/* <!-- ===================my teame section end =================== --> */
-
 
 /* Common Styles */
 a {
@@ -1745,332 +1649,9 @@ h4 {
     line-height: 1.5em;
 }
 
-/* Achievements Section */
-.bestcount-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.bestcount-container {
-    flex: 1 1 22%;
-    /* 4 columns on large screen */
-    min-width: 220px;
-    max-width: 260px;
-    background-color: #2a2a2d;
-    border-bottom: 5px solid #E9331F;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    overflow-y: hidden;
-
-}
-
-.bestcount-container:hover {
-    transform: translateY(-5px);
-}
-
-.icon2 {
-    color: #dc1433;
-    font-size: 2.5em;
-}
-
-.bestcount-num {
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 2.5em;
-    display: block;
-}
-
-.bestcount-text {
-    color: #e0e0e0;
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-top: 5px;
-}
-
-/* Tablet View */
-@media (max-width: 1024px) {
-    .bestcount-container {
-        flex: 1 1 45%;
-        /* 2 items per row */
-    }
-}
-
-/* Mobile View */
-@media (max-width: 600px) {
-    .bestcount-container {
-        flex: 1 1 100%;
-        /* 1 item per row */
-    }
-}
-
-* {
-    box-sizing: border-box;
-}
-
-@media (max-width: 767px) {
-    .services2 {
-        margin-top: 25px;
-    }
-
-    .mobcenter {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media (max-width: 767px) {
-        .titleour+* {
-            margin-top: 20px;
-        }
-    }
-
-}
-
-.fancy-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    /* space between name and lines */
-}
-
-.fancy-text .line {
-    flex: 1;
-    height: 2px;
-    background-color: rgb(5, 5, 5);
-    max-width: 50px;
-    /* control the length */
-}
-
-.fancy-text .name {
-    color: crimson;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.fancy-text .name2 {
-    color: crimson;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.fancy-text2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: crimson;
-}
-
-.fancy-text2 .line2 {
-    flex: 1;
-    height: 2px;
-    background-color: rgb(255, 255, 255);
-    max-width: 50px;
-}
-
-.fancy-text2 .name2 {
-    color: crimson;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.row {
-    --bs-gutter-x: 0rem !important  ;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-}
-
-
-  .ram-team-box {
-    background: #fff;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px 0; /* mobile के लिए vertical spacing */
-  }
-
-  @media (max-width: 767px) {
-    .ram-team-box {
-      margin: 15px auto; /* mobile में और बीच में spacing */
-      width: 90%; /* थोड़ा compact look */
-    }
-  }
-
-  .row.justify-content-center {
-    gap: 20px; /* bootstrap 5+ में supported है, वरना नीचे margin से काम चलेगा */
-  }
-
-  
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 
 
-.vikash-profile-cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: 30px;
-}
-
-.vikash-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 700px;
-    height: 350px;
-    position: relative;
-    color: #2d2d2d;
-    background-color: #b2e5e6;
-    letter-spacing: 1px;
-    border: 25px solid #a0cdcf;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.vikash-card-description {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 40px;
-    height: 100%;
-}
-
-.vikash-card-description-title {
-    color: black;
-    font-size: 18px;
-    text-align: start;
-}
-
-.vikash-card-description-profession {
-    display: block;
-    font-size: 16px;
-    margin-top: -20px;
-}
-.text-muted{
-     margin-top: -10px;
-}
-
-.vikash-card-description-company {
-    display: block;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.vikash-card-description-company:hover {
-    text-decoration: underline;
-}
-
-.vikash-card-description-social {
-    position: absolute;
-    bottom: 40px;
-}
-
-.vikash-card-description-social-follow {
-    display: block;
-    margin-bottom: 8px;
-    color: #555572;
-    font-size: 14px;
-}
-
-.vikash-card-description-social ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.vikash-card-description-social ul li {
-    list-style-type: none;
-}
-
-.vikash-card-description-social ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    color: #121212;
-    border-radius: 50%;
-    box-shadow: 6px 6px 12px #97c3c4, -6px -6px 12px #cdffff;
-    transition: all 0.4s;
-}
-
-.vikash-card-description-social ul li a:hover {
-    color: white;
-    transform: translate(0, -7px);
-}
-
-.vikash-card-description-social ul li:nth-child(1) a:hover {
-    background-color: #1da1f2;
-}
-
-.vikash-card-description-social ul li:nth-child(2) a:hover {
-    background-color: #3f729b;
-}
-
-.vikash-card-description-social ul li:nth-child(3) a:hover {
-    background-color: #00405d;
-}
-
-.vikash-card-description-social ul li:nth-child(4) a:hover {
-    background-color: #0a66c2;
-}
-
-.vikash-card-image {
-    width: 250px;
-    height: 100%;
-    object-fit: cover;
-}
-@media (max-width: 768px) {
-  .vikash-card {
-    flex-direction: column;
-    width: 90%;
-    height: auto;
-    border-width: 15px;
-    padding-bottom: 20px;
-  }
-
-  .vikash-card-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 3px solid #a0cdcf;
-  }
-
-  .vikash-card-description {
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .vikash-card-description-social {
-    position: static;
-    margin-top: 20px;
-  }
-
-  .vikash-card-description-social ul {
-    justify-content: center;
-    gap: 15px;
-  }
-}
 
 
 
